@@ -1,9 +1,27 @@
+import Image from "next/image";
+import { SocialLinks } from "@/components/SocialLinks";
+
 export function Hero() {
   return (
     <section
       id="about"
       className="flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center"
     >
+      <div className="relative mb-8">
+        <div
+          className="absolute -inset-2 rounded-full bg-[var(--accent)]/20 blur-xl"
+          aria-hidden="true"
+        />
+        <Image
+          src="/carmin-headshot.png"
+          alt="Carmin C.L. Montante, PhD"
+          width={120}
+          height={120}
+          priority
+          className="relative h-28 w-28 rounded-full object-cover ring-2 ring-[var(--accent)]/40 ring-offset-2 ring-offset-[var(--bg)]"
+        />
+      </div>
+
       <p className="mb-4 text-sm font-medium uppercase tracking-widest text-[var(--accent-light)]">
         Digital Product &amp; Strategy Leader · PwC
       </p>
@@ -24,6 +42,8 @@ export function Hero() {
       >
         Join the newsletter
       </a>
+
+      <SocialLinks className="mt-8" />
     </section>
   );
 }
