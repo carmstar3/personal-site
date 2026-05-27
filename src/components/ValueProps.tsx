@@ -1,3 +1,5 @@
+import { SectionLabel } from "@/components/SectionLabel";
+
 const pillars = [
   {
     title: "Empirical Research",
@@ -35,11 +37,12 @@ export function ValueProps() {
   return (
     <section id="research" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-14 text-center">
+        <div className="mb-14">
+          <SectionLabel>Research</SectionLabel>
           <h2 className="font-serif text-3xl tracking-tight text-[var(--text)] sm:text-4xl">
             Where research meets practice
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-[var(--muted)]">
+          <p className="mt-4 max-w-2xl text-[var(--muted)]">
             From university faculty and published economic research to enterprise
             AI transformation at PwC — three pillars define my work.
           </p>
