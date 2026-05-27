@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { SectionLabel } from "@/components/SectionLabel";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -41,6 +42,9 @@ export function NewsletterSignup() {
   return (
     <section id="newsletter" className="px-6 py-24">
       <div className="mx-auto max-w-2xl rounded-3xl border border-[var(--line)] bg-[var(--bg-elevated)] px-8 py-14 text-center sm:px-12">
+        <div className="flex justify-center">
+          <SectionLabel>Newsletter</SectionLabel>
+        </div>
         <h2 className="font-serif text-3xl italic tracking-tight text-[var(--text)] sm:text-4xl">
           Stay ahead on AI &amp; Blockchain
         </h2>
